@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<title>手机端问卷调查</title>
+<!--手机端需要添加-->
+<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+<!--手机端需要添加---->
+<link rel="stylesheet" href="http://zzsve.com/m/css/test_rx.css">
+<script src="http://zzsve.com/m/js/jquery-1.8.3.min.js"></script>
+<script src="http://zzsve.com/m/js/jQuery.fontFlex.js"></script>
+<script>
+$(document).ready(function(e) {
+	//320宽度的时候html字体大小是20px;、640宽度的时候html字体大小是40px;
+	$('html').fontFlex(20, 40, 16); 
+	//
+     $(".dxt_box li").click(function(){
+		$(this).addClass("on").siblings().removeClass("on");
+		$(this).parent(".dxt_box").parent(".kcks_title_ts").attr("date-title",1);
+		$(this).parent(".dxt_box").parent(".last").attr("date-title",0);
+		
+		   	
+		});
+		
+	//判断选择是还是否	
+ 	$(".tj_zuotm").click(function(){
+		var dxq_li = $(".dxt_box li");
+		if(dxq_li.hasClass("on")){
+			//alert("1");
+			 //location.href = "是_选择行业.html"; 
+				  
+				  $(".dtks_box").children(".kcks_title_ts").each(function(index, element) {
+                    
+					 if($(this).attr("date-title")==1&&$(this).attr("date-last")==0){
+						//$(this).hide().next().show();   
+						$(this).children(".dxt_box").children("li").removeClass("on");
+						$(this).hide().next().show(); 
+					 }
+					 
+					 if($(this).attr("date-title")==0&&$(this).attr("date-last")==1){
+						location.href = "表单.html"; 
+					 } 
+					 
+                });
+			 
+			return;
+			}/*if(dxq_li.eq(1).hasClass("on")){
+			 //alert("2");
+			 
+			return; 
+			}*/else{
+				alert("请选择！");
+				} 
+		});	 
+ 	
+});
+</script>
+
+</head>
+<body>
+
+<div class="wjdt_title">
+  <h3>问卷调查</h3>
+  <p>关于手机看片的一些调查</p>
+  <img src="http://zzsve.com/m/images/ls.svg" style="width:3rem; position:absolute; top:1rem; left:1rem; "> </div>
+<div class="dtks_box" >
+   <!--题目-->
+  <div class="kcks_title_ts " date-title="2" date-last="0">
+    <h4 class=" kctm_zzbt">是否已经满了18周岁？</h4>
+    <ul class="dxt_box">
+      <li> <em></em><span>是</span> </li>
+      <li> <em></em><span>否</span> </li>
+    </ul>
+  </div>
+  
+  <!--题目-->
+  <div class="kcks_title_ts hide" date-title="2" date-last="0">
+    <h4 class=" kctm_zzbt">请输入你的年龄，方便为你推荐！</h4>
+    <ul class="dxt_box">
+      <li> <em></em><span>18-25岁</span> </li>
+      <li> <em></em><span>25-30岁</span> </li>
+      <li> <em></em><span>30-35岁</span> </li>
+      <li> <em></em><span>35-40岁</span> </li>
+      <li> <em></em><span>40-45岁</span> </li>
+      <li> <em></em><span>45-50岁</span> </li>
+      <li> <em></em><span>50-55岁</span> </li>
+    </ul>
+  </div>
+  
+  <!--题目-->
+  <div class="kcks_title_ts last hide"  date-title="2" date-last="1">
+    <h4 class="kctm_zzbt">是否进入手机看片下载地址？</h4>
+    <ul class="dxt_box">
+      <li> <em></em><span>是</span> </li>
+      <li> <em></em><span>否</span> </li>
+    </ul>
+  </div>
+  
+</div>
+
+<!--结束------------------------------------------>
+
+<div class="kasj_db_but "> <a href="javascript:void(0);" class="tj_zuotm">点击进入</a> </div>
+
+</body>
+</html>
+
