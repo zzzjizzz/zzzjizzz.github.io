@@ -1,6 +1,1 @@
 
-User-agent: *
-Disallow:/m
-Disallow:/tz
-
-Sitemap: http://www.zzjizz.com/sitemap.xml
