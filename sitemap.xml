@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
 <!-- Free Sitemap Generator http://www.sitemapx.com -->
@@ -6,19 +5,7 @@
 <url>
 <loc>http://www.zzjizz.com/</loc>
 <priority>1.0</priority>
-<lastmod>2017-04-77T11:01:09+00:00</lastmod>
-<changefreq>Weekly</changefreq>
-</url>
-<url>
-<loc>http://www.zzjizz.com/m/</loc>
-<priority>0.5</priority>
-<lastmod>2017-04-05T04:47:28+00:00</lastmod>
-<changefreq>Weekly</changefreq>
-</url>
-<url>
-<loc>http://www.zzjizz.com/tz/</loc>
-<priority>0.3</priority>
-<lastmod>2017-04-05T04:47:28+00:00</lastmod>
-<changefreq>Weekly</changefreq>
+<lastmod>2017-04-19T12:30:03+00:00</lastmod>
+<changefreq>Always</changefreq>
 </url>
 </urlset>
