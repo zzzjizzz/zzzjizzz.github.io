@@ -1,0 +1,56 @@
+﻿/* CSS Document */
+/*全局重置*/
+*{ padding:0; margin:0;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%; outline:none;}
+html {font-size: 62.5%;overflow-x:hidden;overflow-y:auto;}
+ul li{ list-style:none}
+u,b,em,s,i{ font-style:normal; text-decoration:none; font-weight:normal}
+img{ border:none;}
+input,button,select,textarea{outline:none;}
+a{ outline:none; color:#474747}
+a:link, a:visited,a:hover, a:active {text-decoration: none; outline:none}
+body{ background-color:#f0f0f0; width:100%; overflow:hidden;font:12px 'Droid Sans Fallback','\5fae\8f6f\96c5\9ed1';color:#474747;}
+/**layout**/
+.allheader{ height:15px; background-color:#02aff3; padding:5px;display:-webkit-box;display:-moz-box;display:box;}
+.allheader .logo{ display:block; width:118px;}
+.allheader .logo img{ height:35px; 100%}
+.allheader .aside{ display:block; width:35px;}
+.nav-right{-moz-box-flex:1;-webkit-box-flex: 1;box-flex: 1;}
+.aside span{ float:left; display:block; width:35px; height:35px; text-indent:-9999px;}
+.aside .sear-btn{display:none;background:url(../img/all_ico.png) 5px -426px no-repeat; background-size:23px 1700%; }
+.aside .pop-nav {background:url(../img/all_ico.png) 3px -471px no-repeat; background-size:30px 1700%;}
+.allheader .sear-tit{-moz-box-flex:1; -webkit-box-flex: 1;box-flex: 1; margin:5px 5px 0; height:25px; line-height:25px;}
+.bdcs-search-form{display:-webkit-box;display:-moz-box;display:box;}.sear-main{ display:block; background-color:#fff;border-radius:3px;position:relative;}
+.bdcs-search-form-input{-moz-box-flex:1;-webkit-box-flex: 1;box-flex: 1; height:18px; padding:4px 10px 3px 5px; border:none; display:block;border-radius:3px 0 0 3px;}
+.bdcs-search-form-submit { display:block;height:25px; width:25px; border:none; background:url(../img/all_ico.png) -5px -38px no-repeat; background-size:28px 2800%}
+.sear-main:after{content: '';position:absolute;top:5px;right:30px;width:1px;height:15px;background:#ddd;}
+.all-nav{ height:40px;display:-webkit-box;display:-moz-box;display:box; background-color:#fff; border-bottom:1px solid #f0f0f0 }
+.all-nav a{ display:block;-moz-box-flex:1;-webkit-box-flex: 1;box-flex: 1; height:40px; line-height:40px; font-size:1.8rem; text-align:center}
+.all-nav .active{ height:38px; border-bottom:2px solid #03aaf9}
+.popNav{position: absolute;left: 0;top: 45px;width: 100%; padding:10px 0;background-color: #000; opacity:0; z-index:999; display:none;}
+.show{ opacity:0.8; display:block}
+.popNav li{ width:25%; height:30px; margin:8px 0; line-height:30px; overflow:hidden; float:left; text-align:center;}
+.popNav li a{ display:block; height:30px; line-height:30px; font-size:1.5rem; color:#fff;}
+.star0{ background:url(../images/litterStar.png) 0px 5px no-repeat}
+.star1{ background:url(../images/litterStar.png) 0px -21px no-repeat}
+.star2{ background:url(../images/litterStar.png) 0px -48px no-repeat}
+.star3{ background:url(../images/litterStar.png) 0px -72px no-repeat}
+.star4{ background:url(../images/litterStar.png) 0px -99px no-repeat}
+.star5{ background:url(../images/litterStar.png) 0px -125px no-repeat}
+.dashenjiadao_bot{background:#eeeeee;position: fixed;left:0;bottom:0;width:100%;z-index:5;text-decoration: none}
+.dashenjiadao_bot em{background: #02AFF3;display: block;margin:10px 15px;font-style:normal;height: 50px;text-align: center;line-height: 50px;border-radius: 3px;color: #fff;font-size: 18px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
